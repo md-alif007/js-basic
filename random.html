@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+</head>
+
+<body>
+    <!-- <h1>This is guess the number game</h1> -->
+    <script>
+        let x = Math.floor(Math.random() * 10);
+
+        let guessNumber = prompt("Enter a number from 0 to 10 : ");
+
+        if (guessNumber > 10) {
+            window.confirm('You have entered a wrong number.');
+        } else {
+            window.confirm('You have entered a valid number.');
+            if (guessNumber == x) {
+                window.confirm('You have entered the correct number ..YAAY!!!');
+            } else {
+                window.confirm('Sorry you loose :( , The number was ' + x);
+            }
+        }
+    </script>
+</body>
+
+</html>
